@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { LayoutComponent } from '../../../components/layout/layout.component';
 
 
 
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
   standalone: true,
   templateUrl: './influencer-list.component.html',
   styleUrls: ['./influencer-list.component.scss'],
-  imports: [CommonModule]
+  imports: [CommonModule,LayoutComponent]
 })
 export class InfluencerListComponent {
 

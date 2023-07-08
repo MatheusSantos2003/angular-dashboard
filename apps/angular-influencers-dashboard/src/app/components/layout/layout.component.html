@@ -1,0 +1,18 @@
+<!-- Split screen in three: Sidebar with icons; collections list; content  -->
+
+<div class="flex w-[100vw] h-[100vh]">
+	<div class="w-20 h-full relative ">
+		<!-- hover:w-60 hover:h-100vh -->
+		<div class="w-full border-r-dark hover:w-60 hover:h-100v border-r-[1px] absolute transition-all duration-200">
+			<ng-content select="[sidebar]"></ng-content>
+		</div>
+	</div>
+
+	<div class="h-full max-w-56">
+		<ng-content select="[list]"></ng-content>
+	</div>
+
+	<div class="flex-1 bg-neutral-200 overflow-y-auto">
+		<ng-content select="[content]"></ng-content>
+	</div>
+</div>
